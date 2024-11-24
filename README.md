@@ -69,7 +69,7 @@ This project is structured into three distinct parts, each focusing on a critica
       - Handling `NULL` or missing values by setting constraints like `NOT NULL` during table creation.
       - Verifying that no `NULL` values exist in the dataset.
 
-The SQL queries used for the Data Wrangling step can be found in the `Data_Wrangling.sql` file.
+   The SQL queries used for the Data Wrangling step can be found in the `Data_Wrangling.sql` file.
 
 
 
@@ -79,11 +79,11 @@ The SQL queries used for the Data Wrangling step can be found in the `Data_Wrang
       - `day_name`: Extracts the day of the week (e.g., Mon, Tue), helping identify the busiest days for each branch.
       - `month_name`: Extracts the month (e.g., Jan, Feb) to determine which months drive the highest sales and profit.
 
-The SQL queries used for the Feature Engineering step can be found in the `Feature_Engineering.sql` file.
+   The SQL queries used for the Feature Engineering step can be found in the `Feature_Engineering.sql` file.
 
 
 
-2. **Exploratory Data Analysis (EDA)**:
+3. **Exploratory Data Analysis (EDA)**:
    The final stage of this project focuses on analyzing the processed data to address key business questions and uncover trends in sales performance, customer behavior, and product demand. This stage is divided into three main analyses, each performed using specific SQL queries:
 
    1. **Product Analysis**
@@ -103,21 +103,58 @@ The SQL queries used for the Feature Engineering step can be found in the `Featu
 
 
 ## Results
-The SQL queries provided insights such as:
+The SQL queries result in the following insights and are divided into three main analyses: product performance, sales trends, and customer behavior, each offering distinct insights into the factors driving business outcomes:
 
-- **Sales Trends**: Sales have consistently increased by an average of 12% in Q4 compared to other quarters.
-- **Regional Performance**: Region X outperforms others with 40% higher sales on average.
-- **Seasonality**: Sales peak in November and December, reflecting holiday shopping trends.
+ 1. **Product Analysis**
+      - Sales & Performance Insights: Analysis of popular cities, branches, and dominant product lines, including revenue, sales, and ratings.
+      - Customer Preferences: Gender-based product preferences and purchasing patterns.
+      - Financial Trends: Month-by-month financial analysis (e.g., revenue, COGS) and branch/product performance comparisons.
 
-Refer to the `docs/project_summary.pdf` for a detailed explanation.
+2. **Sales Analysis**
+      - Sales Distribution by Time & Day: Number of sales by time of day (morning, afternoon, evening) and weekday.
+      - Revenue by Customer Type: Identification of the customer type generating the highest revenue.
+      - Tax & VAT Insights: Analysis of cities with the highest average VAT and customer types paying the most VAT.
 
+3. **Customer Analysis**
+      - Demographics & Preferences: Insights into unique customer types, payment methods, gender distribution, and the highest-spending customer type.
+      - Rating Analysis: Analysis of when and where customers give the highest average ratings (by time of day, day of the week, and branch).
+      - Branch-wise Gender & Rating Distribution: Breakdown of gender and rating patterns across branches.
 
 
 ## Usage
-1. Set up a database (e.g., MySQL, PostgreSQL, SQLite).
-2. Create the necessary tables:
-   ```bash
-   psql -U username -d database_name -f sql/schema/create_tables.sql
+1. Set up MySQL Environment:
+   - Install MySQL Workbench (or any other preferred MySQL client).
+   - Ensure MySQL server is running and accessible.
 
+2. Download and Prepare Data:
+   - Download the WalmartSalesData.csv (or your dataset).
+   - Ensure the dataset is clean and properly formatted for MySQL import.
+
+3. Create Database and Tables:
+   - Create a new database in MySQL: `CREATE DATABASE` walmart_sales;
+   - Create the sales table using the schema provided in the Data section of the project.
+   - Import the data from the CSV file into the sales table using the LOAD DATA INFILE statement or MySQL Workbench's import functionality.
+
+4. Data Wrangling:
+   - Run SQL queries from the Data_Wrangling.sql file to clean the data (e.g., handling NULLs, ensuring no missing values, setting constraints like NOT NULL).
+
+5. Feature Engineering:
+   - Use SQL queries from the Feature_Engineering.sql file to create new columns (e.g., time_of_day, day_name, month_name) to enhance the dataset with additional insights.
+   - Test the transformations by querying the new columns to verify correct calculations.
+
+6. Exploratory Data Analysis (EDA):
+   - Run the analysis queries from the following files:
+      - Product_Analysis.sql – To analyze product performance and sales trends.
+      - Sales_Analysis.sql – To explore sales trends, time distribution, and tax-related insights.
+      - Customer_Analysis.sql – To examine customer behavior, demographics, and purchasing patterns.
+   - Check the results of each analysis using SELECT statements and aggregate functions to answer key business questions.
+
+7. Analyze and Interpret Results:
+   - Review the insights generated from each analysis (Product, Sales, and Customer).
+   - Make sure the results align with business goals and provide actionable insights (e.g., sales trends, customer preferences).
+
+
+
+If you made any improvements, feel free to contribute back or share findings via GitHub issues, pull requests, or README documentation.
 
 
