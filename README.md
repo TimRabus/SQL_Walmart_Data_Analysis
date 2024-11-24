@@ -6,10 +6,10 @@ The primary aim of this project is to analyze Walmart's sales data to uncover in
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Data](#data)
-3. [Project Overview](#projectoverview)
+3. [Project Overview](#project-overview)
 4. [Results](#results)
-5. [Usage](#usage)
-6. [License](#license)
+5. [Replication](#replication)
+
 
 
 
@@ -63,7 +63,7 @@ Sample data can be found in the `WalmartSalesData.csv` file.
 ## Project Overview
 This project is structured into three distinct parts, each focusing on a critical aspect of data analysis.
 
-1. **Data Wrangling**:
+1. Data Wrangling:
    The first stage ensures the dataset is clean and ready for analysis. Key steps include:
       - Building a database, creating tables, and inserting data.
       - Handling `NULL` or missing values by setting constraints like `NOT NULL` during table creation.
@@ -73,7 +73,7 @@ This project is structured into three distinct parts, each focusing on a critica
 
 
 
-2. **Feature Engineering**:
+2. Feature Engineering:
    New columns are created from existing data to provide deeper insights:
       - `time_of_day`: Categorizes transactions into Morning, Afternoon, or Evening, revealing sales trends throughout the day.
       - `day_name`: Extracts the day of the week (e.g., Mon, Tue), helping identify the busiest days for each branch.
@@ -83,7 +83,7 @@ This project is structured into three distinct parts, each focusing on a critica
 
 
 
-3. **Exploratory Data Analysis (EDA)**:
+3. Exploratory Data Analysis (EDA):
    The final stage of this project focuses on analyzing the processed data to address key business questions and uncover trends in sales performance, customer behavior, and product demand. This stage is divided into three main analyses, each performed using specific SQL queries:
 
    1. **Product Analysis**
@@ -121,7 +121,9 @@ The SQL queries result in the following insights and are divided into three main
       - Branch-wise Gender & Rating Distribution: Breakdown of gender and rating patterns across branches.
 
 
-## Usage
+## Replication
+To replicate this Walmart Sales project, please follow the steps outlined below.
+
 1. Set up MySQL Environment:
    - Install MySQL Workbench (or any other preferred MySQL client).
    - Ensure MySQL server is running and accessible.
