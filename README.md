@@ -68,6 +68,7 @@ This project is structured into three distinct parts, each focusing on a critica
       - Building a database, creating tables, and inserting data.
       - Handling `NULL` or missing values by setting constraints like `NOT NULL` during table creation.
       - Verifying that no `NULL` values exist in the dataset.
+
 The SQL queries used for the Data Wrangling step can be found in the `Data_Wrangling.sql` file.
 
 
@@ -77,6 +78,7 @@ The SQL queries used for the Data Wrangling step can be found in the `Data_Wrang
       - `time_of_day`: Categorizes transactions into Morning, Afternoon, or Evening, revealing sales trends throughout the day.
       - `day_name`: Extracts the day of the week (e.g., Mon, Tue), helping identify the busiest days for each branch.
       - `month_name`: Extracts the month (e.g., Jan, Feb) to determine which months drive the highest sales and profit.
+
 The SQL queries used for the Feature Engineering step can be found in the `Feature_Engineering.sql` file.
 
 
