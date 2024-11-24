@@ -11,7 +11,7 @@ This project analyzes Walmart's quarterly sales data using SQL queries. It focus
 
 
 ## Introduction
-# Walmart Q1 2019 Sales Analysis Using SQL
+### Walmart Q1 2019 Sales Analysis Using SQL
 This project analyzes Walmart's sales data from the first quarter of 2019 using SQL. The primary objective is to uncover key insights and trends in the quarterly performance by leveraging SQL queries for data exploration and analysis. 
 
 The project focuses on:
