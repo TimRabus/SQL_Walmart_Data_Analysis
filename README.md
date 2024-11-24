@@ -11,29 +11,43 @@ This project analyzes Walmart's quarterly sales data using SQL queries. It focus
 
 
 ## Introduction
-This project leverages SQL to analyze sales data from Walmart. SQL queries are used to process, clean, 
-and extract insights from the dataset, such as:
-- Identifying sales trends over quarters.
-- Analyzing performance by region.
-- Detecting seasonal variations in sales.
+# Walmart Q1 2019 Sales Analysis Using SQL
+This project analyzes Walmart's sales data from the first quarter of 2019 using SQL. The primary objective is to uncover key insights and trends in the quarterly performance by leveraging SQL queries for data exploration and analysis. 
 
-The project is designed to be run on any SQL database system (e.g., MySQL, PostgreSQL, SQLite).
+The project focuses on:
 
+   - Evaluation of Product Lines: Identifying performance variations across different categories.
+   - Effectiveness of Sales Strategies: Assessing the impact of various sales approaches on overall revenue.
+   - Customer Segment Analysis: Gaining insights into the behavior and contribution of distinct customer groups.
+
+The project was conducted in MySQL Workbench.
 
 
 ## Data
-The dataset includes sales data from Walmart stores, organized in the following schema:
+The dataset contains sales data from Walmart's first quarter of 2019, including information on product categories, sales revenue, customer segments, and sales dates. The data is organized in the following schema:
 
 ### Table: `sales`
-| Column         | Type        | Description                |
-|----------------|-------------|----------------------------|
-| `store_id`     | INT         | Unique identifier for store|
-| `date`         | DATE        | Date of the sales record   |
-| `region`       | VARCHAR     | Region of the store        |
-| `sales_amount` | DECIMAL     | Total sales amount         |
+| Column                    | Type              | Description                             |
+|---------------------------|-------------------|-----------------------------------------|
+| `invoice_id`              | VARCHAR (30)      | Invoice of the sales made               |
+| `branch`                  | VARCHAR (5)       | Branch at which sales were made         |
+| `city`                    | VARCHAR (30)      | The location of the branch              |
+| `customer_type`           | VARCHAR (30)      | The type of the customer                |
+| `gender    `              | VARCHAR (10)      | Gender of the customer making purchase  |
+| `product_line`            | VARCHAR (100)     | Product line of the product sold        |
+| `unit_price`              | DECIMAL(10, 2)    | The price of each product               |
+| `quantity`                | INTEGER           | The amount of the product sold          |
+| `VAT`                     | FLOAT(6, 4)       | The amount of tax on the purchase       |
+| `total`                   | FLOAT(6, 4)       | The total cost of the purchase          |
+| `date`                    | DATE              | The date on which the purchase was made |
+| `time`                    | TIMESTAMP         | The time at which the purchase was made |
+| `payment_method`          | DECIMAL(10, 2)    | The method with which was paid          |
+| `cogs`                    | DECIMAL(10, 2)    | Cost Of Goods sold                      |
+| `gross_margin_percentage` | FLOAT(11, 9)      | Gross margin percentage                 |
+| `gross_income`            | DECIMAL(10, 2)    | Gross Income                            |
+| `rating`                  | FLOAT(2, 1)       | Rating                                  |
 
-Sample data can be found in the `data/` folder as a `.csv` file. If you'd like to load it into a database, 
-use the `sql/schema/create_tables.sql` script.
+Sample data can be found in the `data/` folder as a `.csv` file.
 
 
 
