@@ -1,5 +1,5 @@
-# SQL_Walmart_Data_Analysis
-This project analyzes Walmart's quarterly sales data using SQL queries. It focuses on uncovering trends, regional performance,  and seasonality in sales, all achieved through efficient database queries.
+# About: SQL_Walmart_Data_Analysis
+The primary aim of this project is to analyze Walmart's sales data to uncover insights into the factors influencing sales across different branches, while addressing key business questions related to products, sales strategies, and customer behavior.
 
 ## Table of Contents
 1. [Introduction](#introduction)
