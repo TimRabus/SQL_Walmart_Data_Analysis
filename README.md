@@ -6,7 +6,7 @@ The primary aim of this project is to analyze Walmart's sales data to uncover in
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Data](#data)
-3. [Project Overview](#project_overview)
+3. [Project Overview](#projectoverview)
 4. [Results](#results)
 5. [Usage](#usage)
 6. [License](#license)
@@ -68,15 +68,16 @@ This project is structured into three distinct parts, each focusing on a critica
       - Building a database, creating tables, and inserting data.
       - Handling `NULL` or missing values by setting constraints like `NOT NULL` during table creation.
       - Verifying that no `NULL` values exist in the dataset.
+   The SQL queries used for the Data Wrangling step can be found in the `Data_Wrangling.sql` file.
 
 
-  
+
 2. **Feature Engineering**:
    New columns are created from existing data to provide deeper insights:
       - `time_of_day`: Categorizes transactions into Morning, Afternoon, or Evening, revealing sales trends throughout the day.
       - `day_name`: Extracts the day of the week (e.g., Mon, Tue), helping identify the busiest days for each branch.
       - `month_name`: Extracts the month (e.g., Jan, Feb) to determine which months drive the highest sales and profit.
-   The SQL queries used for the Feature Engineering step can be found in the Feature Engineering.sql file.
+   The SQL queries used for the Feature Engineering step can be found in the `Feature_Engineering.sql` file.
 
 
 
@@ -85,15 +86,15 @@ This project is structured into three distinct parts, each focusing on a critica
 
    1. **Product Analysis**
       - Goal: Understand the performance of different product lines and their contributions to overall sales.
-      - Query: sql/queries/sales_trends.sql
+      - Query: `Product_Analysis.sql` file
      
    2. **Sales Analysis**
       - Goal: Evaluate sales trends across branches to measure the effectiveness of various sales strategies.
-      - Query: sql/queries/regional_analysis.sql
+      - Query: `Sales_Analysis.sql` file
      
    3. **Customer Analysis**
       - Goal: Examine customer segments, purchasing trends, and profitability to identify high-value segments.
-      - Query: sql/queries/seasonality.sql
+      - Query: `Customer_Analysis.sql` file
 
 
 
