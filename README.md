@@ -1,6 +1,8 @@
 # About: SQL_Walmart_Data_Analysis
 The primary aim of this project is to analyze Walmart's sales data to uncover insights into the factors influencing sales across different branches, while addressing key business questions related to products, sales strategies, and customer behavior.
 
+
+
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Data](#data)
@@ -8,6 +10,7 @@ The primary aim of this project is to analyze Walmart's sales data to uncover in
 4. [Results](#results)
 5. [Usage](#usage)
 6. [License](#license)
+
 
 
 ## Introduction
@@ -21,6 +24,7 @@ The project focuses on:
    - Customer Segment Analysis: Gaining insights into the behavior and contribution of distinct customer groups.
 
 The project was conducted in MySQL Workbench.
+
 
 
 ## Data
@@ -47,26 +51,40 @@ The dataset contains sales data from Walmart's first quarter of 2019, including 
 | `gross_income`            | DECIMAL(10, 2)    | Gross Income                            |
 | `rating`                  | FLOAT(2, 1)       | Rating                                  |
 
-Sample data can be found in the `data/` folder as a `.csv` file.
+Sample data can be found in the `WalmartSalesData.csv` file.
 
 
 
-## SQL Queries
-The project is divided into three main analyses, each performed using specific SQL queries:
+## Project Overview
+This project is structured into three distinct parts, each focusing on a critical aspect of data analysis.
 
-1. **Sales Trends**:
-   - Query: `sql/queries/sales_trends.sql`
-   - Goal: Analyze how sales have evolved quarter by quarter.
+1. **Data Wrangling**:
+   The first stage ensures the dataset is clean and ready for analysis. Key steps include:
+      - Building a database, creating tables, and inserting data.
+      - Handling NULL or missing values by setting constraints like NOT NULL during table creation.
+      - Verifying that no NULL values exist in the dataset.
+  
+2. **Feature Engineering**:
+   New columns are created from existing data to provide deeper insights:
+      - time_of_day: Categorizes transactions into Morning, Afternoon, or Evening, revealing sales trends throughout the day.
+      - day_name: Extracts the day of the week (e.g., Mon, Tue), helping identify the busiest days for each branch.
+      - month_name: Extracts the month (e.g., Jan, Feb) to determine which months drive the highest sales and profit.
+   The SQL queries used for the Feature Engineering step can be found in the Feature Engineering.sql file.
 
-2. **Regional Analysis**:
-   - Query: `sql/queries/regional_analysis.sql`
-   - Goal: Compare performance across different regions.
+2. **Exlporatory Data Analysis (EDA)**:
+   The final stage of this project focuses on analyzing the processed data to address key business questions and uncover trends in sales performance, customer behavior, and product demand. This stage is divided into three main analyses, each performed using specific SQL queries:
 
-3. **Seasonality**:
-   - Query: `sql/queries/seasonality.sql`
-   - Goal: Identify seasonal sales patterns.
-
-You can find all queries in the `sql/queries/` folder.
+   1. **Product Analysis**
+      - Goal: Understand the performance of different product lines and their contributions to overall sales.
+      - Query: sql/queries/sales_trends.sql
+     
+   2. **Sales Analysis**
+      - Goal: Evaluate sales trends across branches to measure the effectiveness of various sales strategies.
+      - Query: sql/queries/regional_analysis.sql
+     
+    3. **Customer Analysis**
+      - Goal: Examine customer segments, purchasing trends, and profitability to identify high-value segments and seasonal patterns.
+      - Query: sql/queries/seasonality.sql
 
 
 
@@ -78,7 +96,6 @@ The SQL queries provided insights such as:
 - **Seasonality**: Sales peak in November and December, reflecting holiday shopping trends.
 
 Refer to the `docs/project_summary.pdf` for a detailed explanation.
-
 
 
 
