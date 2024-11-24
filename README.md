@@ -6,7 +6,7 @@ The primary aim of this project is to analyze Walmart's sales data to uncover in
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Data](#data)
-3. [SQL Queries](#sql-queries)
+3. [Project Overview](#project_overview)
 4. [Results](#results)
 5. [Usage](#usage)
 6. [License](#license)
@@ -61,17 +61,17 @@ This project is structured into three distinct parts, each focusing on a critica
 1. **Data Wrangling**:
    The first stage ensures the dataset is clean and ready for analysis. Key steps include:
       - Building a database, creating tables, and inserting data.
-      - Handling NULL or missing values by setting constraints like NOT NULL during table creation.
-      - Verifying that no NULL values exist in the dataset.
+      - Handling `NULL` or missing values by setting constraints like `NOT NULL` during table creation.
+      - Verifying that no `NULL` values exist in the dataset.
   
 2. **Feature Engineering**:
    New columns are created from existing data to provide deeper insights:
-      - time_of_day: Categorizes transactions into Morning, Afternoon, or Evening, revealing sales trends throughout the day.
-      - day_name: Extracts the day of the week (e.g., Mon, Tue), helping identify the busiest days for each branch.
-      - month_name: Extracts the month (e.g., Jan, Feb) to determine which months drive the highest sales and profit.
+      - `time_of_day`: Categorizes transactions into Morning, Afternoon, or Evening, revealing sales trends throughout the day.
+      - `day_name`: Extracts the day of the week (e.g., Mon, Tue), helping identify the busiest days for each branch.
+      - `month_name`: Extracts the month (e.g., Jan, Feb) to determine which months drive the highest sales and profit.
    The SQL queries used for the Feature Engineering step can be found in the Feature Engineering.sql file.
 
-2. **Exlporatory Data Analysis (EDA)**:
+2. **Exploratory Data Analysis (EDA)**:
    The final stage of this project focuses on analyzing the processed data to address key business questions and uncover trends in sales performance, customer behavior, and product demand. This stage is divided into three main analyses, each performed using specific SQL queries:
 
    1. **Product Analysis**
@@ -82,8 +82,8 @@ This project is structured into three distinct parts, each focusing on a critica
       - Goal: Evaluate sales trends across branches to measure the effectiveness of various sales strategies.
       - Query: sql/queries/regional_analysis.sql
      
-    3. **Customer Analysis**
-      - Goal: Examine customer segments, purchasing trends, and profitability to identify high-value segments and seasonal patterns.
+   3. **Customer Analysis**
+      - Goal: Examine customer segments, purchasing trends, and profitability to identify high-value segments.
       - Query: sql/queries/seasonality.sql
 
 
