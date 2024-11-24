@@ -17,6 +17,7 @@ The primary aim of this project is to analyze Walmart's sales data to uncover in
 ### Walmart Q1 2019 Sales Analysis Using SQL
 This project analyzes Walmart's sales data from the first quarter of 2019 using SQL. The primary objective is to uncover key insights and trends in the quarterly performance by leveraging SQL queries for data exploration and analysis. 
 
+
 The project focuses on:
 
    - Evaluation of Product Lines: Identifying performance variations across different categories.
@@ -24,6 +25,8 @@ The project focuses on:
    - Customer Segment Analysis: Gaining insights into the behavior and contribution of distinct customer groups.
 
 The project was conducted in MySQL Workbench.
+
+
 
 
 
@@ -55,6 +58,8 @@ Sample data can be found in the `WalmartSalesData.csv` file.
 
 
 
+
+
 ## Project Overview
 This project is structured into three distinct parts, each focusing on a critical aspect of data analysis.
 
@@ -63,6 +68,8 @@ This project is structured into three distinct parts, each focusing on a critica
       - Building a database, creating tables, and inserting data.
       - Handling `NULL` or missing values by setting constraints like `NOT NULL` during table creation.
       - Verifying that no `NULL` values exist in the dataset.
+
+
   
 2. **Feature Engineering**:
    New columns are created from existing data to provide deeper insights:
@@ -70,6 +77,8 @@ This project is structured into three distinct parts, each focusing on a critica
       - `day_name`: Extracts the day of the week (e.g., Mon, Tue), helping identify the busiest days for each branch.
       - `month_name`: Extracts the month (e.g., Jan, Feb) to determine which months drive the highest sales and profit.
    The SQL queries used for the Feature Engineering step can be found in the Feature Engineering.sql file.
+
+
 
 2. **Exploratory Data Analysis (EDA)**:
    The final stage of this project focuses on analyzing the processed data to address key business questions and uncover trends in sales performance, customer behavior, and product demand. This stage is divided into three main analyses, each performed using specific SQL queries:
@@ -85,6 +94,8 @@ This project is structured into three distinct parts, each focusing on a critica
    3. **Customer Analysis**
       - Goal: Examine customer segments, purchasing trends, and profitability to identify high-value segments.
       - Query: sql/queries/seasonality.sql
+
+
 
 
 
