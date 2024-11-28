@@ -138,17 +138,17 @@ To replicate this Walmart Sales project, please follow the steps outlined below.
    - Import the data from the CSV file into the sales table using the LOAD DATA INFILE statement or MySQL Workbench's import functionality.
 
 4. **Data Wrangling**:
-   - Run SQL queries from the Data_Wrangling.sql file to clean the data (e.g., handling NULLs, ensuring no missing values, setting constraints like NOT NULL).
+   - Run SQL queries from the Data_Wrangling.sql file to clean the data (e.g., handling `NULL`, ensuring no missing values, setting constraints like `NOT NULL`).
 
 5. **Feature Engineering**:
-   - Use SQL queries from the Feature_Engineering.sql file to create new columns (e.g., time_of_day, day_name, month_name) to enhance the dataset with additional insights.
+   - Use SQL queries from the Feature_Engineering.sql file to create new columns (e.g. `time_of_day`, `day_name`, `month_name`) to enhance the dataset with additional insights.
    - Test the transformations by querying the new columns to verify correct calculations.
 
 6. **Exploratory Data Analysis (EDA)**:
    - Run the analysis queries from the following files:
-      - Product_Analysis.sql – To analyze product performance and sales trends.
-      - Sales_Analysis.sql – To explore sales trends, time distribution, and tax-related insights.
-      - Customer_Analysis.sql – To examine customer behavior, demographics, and purchasing patterns.
+      - `Product_Analysis.sql` – To analyze product performance and sales trends.
+      - `Sales_Analysis.sql` – To explore sales trends, time distribution, and tax-related insights.
+      - `Customer_Analysis.sql` – To examine customer behavior, demographics, and purchasing patterns.
    - Check the results of each analysis using SELECT statements and aggregate functions to answer key business questions.
 
 7. **Analyze and Interpret Results**:
