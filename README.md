@@ -106,19 +106,20 @@ This project is structured into three distinct parts, each focusing on a critica
 The SQL queries result in the following insights and are divided into three main analyses: product performance, sales trends, and customer behavior, each offering distinct insights into the factors driving business outcomes:
 
  1. **Product Analysis**
-      - Sales & Performance Insights: Analysis of popular cities, branches, and dominant product lines, including revenue, sales, and ratings.
-      - Customer Preferences: Gender-based product preferences and purchasing patterns.
-      - Financial Trends: Month-by-month financial analysis (e.g., revenue, COGS) and branch/product performance comparisons.
+      - Top Product Lines: Electronic Accessories is the best-selling product line, while Food and Beverages (F&B) generates the highest revenue at $561 million.
+      - Product Preferences by Gender: Fashion Accessories are most popular among women, whereas Health and Beauty products are favored by men.
+      - Overall Performance: Four out of six product lines demonstrate above-average sales, with F&B also being the highest-rated product line at 7.11.
 
 2. **Sales Analysis**
-      - Sales Distribution by Time & Day: Number of sales by time of day (morning, afternoon, evening) and weekday.
-      - Revenue by Customer Type: Identification of the customer type generating the highest revenue.
-      - Tax & VAT Insights: Analysis of cities with the highest average VAT and customer types paying the most VAT.
-
+      - Top-Performing City: Naypyitaw leads in sales revenue, generating an impressive $110,490.78 million.
+      - Sales Insights by Customer Type: Members account for the majority of sales, despite incurring a higher average tax percentage compared to non-members.
+      - Payment and Timing Trends: Cash remains the dominant payment method, with Saturday evenings being the most popular time for purchases.
+   
 3. **Customer Analysis**
-      - Demographics & Preferences: Insights into unique customer types, payment methods, gender distribution, and the highest-spending customer type.
-      - Rating Analysis: Analysis of when and where customers give the highest average ratings (by time of day, day of the week, and branch).
-      - Branch-wise Gender & Rating Distribution: Breakdown of gender and rating patterns across branches.
+      - Demographics and Preferences: Gender distribution is nearly equal, with a slight majority of male customers, and members slightly outnumbering non-members.
+      - Member vs. Non-Member Ratings: Non-members have a marginally higher average rating compared to members (6.99 vs. 6.93).
+      - Rating Trends: Customers provide the highest ratings on Monday (average 7.13) and during the afternoon (average 7.02).
+    
 
 
 ## Replication
