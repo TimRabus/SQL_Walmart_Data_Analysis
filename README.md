@@ -111,14 +111,14 @@ The SQL queries result in the following insights and are divided into three main
       - Overall Performance: Four out of six product lines demonstrate above-average sales, with F&B also being the highest-rated product line at 7.11.
 
 2. **Sales Analysis**
-      - Top-Performing City: Naypyitaw leads in sales revenue, generating an impressive $110,490.78 million.
-      - Sales Insights by Customer Type: Members account for the majority of sales, despite incurring a higher average tax percentage compared to non-members.
-      - Payment and Timing Trends: Cash remains the dominant payment method, with Saturday evenings being the most popular time for purchases.
+      - Top-Performing Cities: Naypyitaw ranks highest in sales revenue at $110,5 million, while Yangon records the highest sales volume.
+      - Branch Sales Trends: Across all branches, Wednesday emerges as the top-performing sales day, whereas Friday records the lowest sales.
+      - Payment and Timing Patterns: Cash continues to be the most frequently used payment method, with Saturday evenings being the peak time for customer purchases.
    
 3. **Customer Analysis**
       - Demographics and Preferences: Gender distribution is nearly equal, with a slight majority of male customers, and members slightly outnumbering non-members.
-      - Member vs. Non-Member Ratings: Non-members have a marginally higher average rating compared to members (6.99 vs. 6.93).
-      - Rating Trends: Customers provide the highest ratings on Monday (average 7.13) and during the afternoon (average 7.02).
+      - Member vs. Non-Member: Non-members purchase more frequently and spend more per transaction on average.
+      - Rating Trends: Customers provide the highest ratings on Monday (average 7.13) and during afternoons (average 7.02).
     
 
 
